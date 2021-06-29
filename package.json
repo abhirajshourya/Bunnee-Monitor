@@ -12,19 +12,20 @@
     "lint": "echo \"No linting configured\"",
     "build-installer": "electron-builder"
   },
-
   "build": {
     "appId": "Bunnee -Monitor",
     "win": {
-      "target": ["nsis"],
+      "target": [
+        "nsis"
+      ],
       "icon": "src/rabbit.ico",
       "requestedExecutionLevel": "requireAdministrator"
     },
     "nsis": {
-      "installerIcon": "src/rabbit.ico",
+      "installerIcon": "src/icon.ico",
       "uninstallerIcon": "src/icon.ico",
       "uninstallDisplayName": "Bunnee -Monitor",
-      "license": "license.txt",
+      "license": "src/license.txt",
       "oneClick": false,
       "allowToChangeInstallationDirectory": true
     }
